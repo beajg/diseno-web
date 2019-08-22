@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+#container{
+    width: 70%;
+    background-color: #D9E7FF;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    padding: 2cm;
+}
+.rojo{
+    color: red;
+}
+
+h1{
+    border-bottom: dotted black 7px;
+    text-align: center;
+    font-size: 1cm;
+    margin-top: -2%;
+}
+
+#nombre{
+    text-align: center;
+    margin-top: -2%;
+}
+
+#img{
+    text-align: center;
+}
+
+#logo{
+    margin-inline-start: 0%;
+}
+
+article{
+    border: dotted black 10px;
+    padding: 1rem;
+}
