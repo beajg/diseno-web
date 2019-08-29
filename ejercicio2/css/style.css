@@ -54,19 +54,34 @@ html {
   }
 
 /*AQUÍ EMPIEZO A EDITAR */
+header{
+    grid-column: 2/4
+}
 
 body{
     font-family: 'Montserrat', sans-serif;
-    line-height: 1cm;
-    padding-right: 2cm;
-    padding-left: 2cm;
-    padding-top: 0cm;
+    line-height: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 0px;
+    background: rgba(255,235,184,1);
+    background: -moz-linear-gradient(0deg, rgba(255,235,184,1) 0%, rgba(255,255,255,0.16) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,235,184,1)), color-stop(100%, rgba(255,255,255,0.16)));
+    background: -webkit-linear-gradient(0deg, rgba(255,235,184,1) 0%, rgba(255,255,255,0.16) 100%);
+    background: -o-linear-gradient(0deg, rgba(255,235,184,1) 0%, rgba(255,255,255,0.16) 100%);
+    background: -ms-linear-gradient(0deg, rgba(255,235,184,1) 0%, rgba(255,255,255,0.16) 100%);
+    background: linear-gradient(0deg, rgba(255,235,184,1) 0%, rgba(255,255,255,0.16) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffebb8', endColorstr='#ffffff', GradientType=1 );
 }
 
-nav{
-    display: table-row;
-    padding-left: 1cm;
-    padding-right: 1cm;
+.menu li {
+    display: inline-block;
+    
+}
+
+.menu :before :hover{
+   color: lightgray;
+    
 }
 
 h1{
@@ -81,7 +96,7 @@ h2 {
     text-align: left;
     padding-top: 1cm;
     text-decoration-line: underline;
-    color: #6B8078;
+    color: rgb(21, 50, 131);
     font-size: .5cm
 }
 
@@ -89,4 +104,25 @@ h2 {
     width: 10cm;
     padding: 2cm;
 }
+main{
+    grid-column: 1 / 5
+}
 
+footer{
+    text-align: center;
+    grid-area: 4 / 1 / 4 / 5;
+    background-color: aliceblue
+
+}
+
+footer img{
+    width: 1cm;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 1fr 1fr 100px;
+    grid-gap: 10px;
+}
