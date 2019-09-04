@@ -4,76 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grid 2</title>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
+    <style>
+        .ocultar {
+           display: none;
+        }
+    /* PARA CAMBIAR ESTILO DE TEXTO EN CSS 
+    .lg-sub-html h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+.lg-sub-html p {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+*/
+    </style>
+    <title>Ej. 3 Galería e imágenes</title>
 </head>
-<style>
-.container{
-    height: 100vh;
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px;
-    grid-template-areas: 
-    ". . . . . . . ."
-    "h h h h h h . ."
-    "a a a a . . . as"
-    "a a a a . . . as"
-    "a a a a . . . as"
-    "f f f f f f f f";
-}
-.child{
-    border: solid gray 2px;
-    background-color: rgb(90, 148, 43);
-    opacity: 80%;
-}
-
-header{
-    grid-area: h; 
-}
-
-article{
-    grid-area: a; 
-}
-section{
-    grid-area: 2 / 3 / 6 / 9;
-    opacity: 80%;
-    background-color: rgb(56, 164, 197);
-    border-color: black;
-    z-index: -1;
-}
-
-aside{
-    grid-area: as; 
-}
-
-footer{
-    grid-area: f; 
-}
-</style>
-
 <body>
     <div class="container">
-        <header class="child">
-            <p>Header</p>
+        <header>
+
         </header>
-
-        <article class="child">
-            <p>Article</p>
-        </article>
-
         <section>
-            <p>Section</p>
+            <h1>GALERÍA</h1>
+            <p>Aquí hay una muestra de mi trabajo</p>
+            <div id="lightgallery">
+                    <a href="imgs/dog.jpg" data-sub-html="#caption1">
+                        <img src="imgs/dog-thumb.jpg" alt="Fotografía de perrito"/>
+                    </a>
+                    <a href="imgs/coffee.jpg" data-sub-html="#caption2">
+                        <img src="imgs/coffee-thumb.jpg" alt="Fotografía de café"/>
+                    </a>
+                    <a href="imgs/fire.jpg" data-sub-html="#caption3">
+                        <img src="imgs/fire-thumb.jpg" alt="Fotografía de fogata"/>
+                    </a>
+                    <a href="imgs/sunset.jpg" data-sub-html="#caption4">
+                        <img src="imgs/sunset-thumb.jpg" alt="Fotografía de atardecer"/>
+                    </a>
+            </div>
+            <div id="caption1" class="ocultar">
+                <h4 class="subtitulo">Dog</h4>
+                <p class="parrafo">Fotografía de perrito</p>
+            </div>
+            <div id="caption2" class="ocultar">
+                <h4 class="subtitulo">Coffee</h4>
+                <p class="parrafo">Fotografía de café</p>
+            </div>
+            <div id="caption3" class="ocultar">
+                <h4 class="subtitulo">Fire</h4>
+                <p class="parrafo">Fotografía de una fogata</p>
+            </div>
+            <div id="caption4" class="ocultar">
+                <h4 class="subtitulo">Sunset</h4>
+                <p class="parrafo">Fotografía de atardecer</p>
+            </div>
         </section>
-
-        <aside class="child">
-            <p>Aside</p>
-        </aside>
-
-        <footer class="child">
-            <p>Footer</p>
-        </footer>
     </div>
+    <!-- jQuery version must be >= 1.8.0; -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/lightgallery-all.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="modules/lg-thumbnail.min.js"></script>
+    <script src="modules/lg-fullscreen.min.js"></script>
+   
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+        });
+    </script>
 </body>
 </html>
