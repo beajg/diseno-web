@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes BPG</title>
+    <script type="text/javascript" src="js/bpgdec8a.js"></script>
+    <style>
+        canvas{
+            width: 800px;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            background-color: antiquewhite;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "h h h"
+            "s s s"
+            "f f f";
+        }
+        header{
+            grid-area: h;
+        }
+        main{
+            grid-area: s;
+            background-image: url
+        }
+        footer{
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ejercicio imágenes bpg</h1>
+        </header>
+        <main>
+            <h2>Image BPN</h2>
+            <figure>
+                <img src="imgs/Portada.bpg" alt="Otra imagen">
+            </figure>
+            <picture>
+                    <source media="(min-width: 960px)" srcset="imgs/dog.jpg">
+                    <source media="(min-width: 460px)" srcset="imgs/dog-med.jpg">
+                    <source media="(min-width: 0px)" srcset="imgs/dog-thumb.jpg">
+                    <img src="imgs/dog.jpg" alt="Imagen de perrito" width="800px">
+            </picture>
+        </main>
+        <footer>
+            Aquí va el footer :)
+        </footer>
+
+    </div>
+</body>
+</html>
