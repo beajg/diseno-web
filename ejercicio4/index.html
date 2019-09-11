@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4, svg y vivus</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+
+            <object id="imagen" type="image/svg+xml" data="imgs/luna.svg"></object>
+
+            <script type="text/javascript" src="js/vivus.js"></script>
+
+           <script>
+            const myVivus = new Vivus('imagen');
+            myVivus.play(1, function() {
+            });
+            </script>
+        </section>
+    </div>
+</body>
+</html>

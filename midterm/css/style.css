@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+  }
+
+  .parallax {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+    perspective-origin: 0 0;
+  }
+  
+  .parallax-child {
+    transform-origin: 0 0;
+    transform: translateZ(-2px) scale(3);
+  }
