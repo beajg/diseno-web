@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4.3, svg y vivus</title>
+    <style>
+
+    button {
+        margin: 0;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        border: 1px solid black;
+        font-size: 2rem;
+        text-decoration: none;
+        cursor: pointer;
+        outline: 0;
+    }
+
+    button:hover, button:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255)
+    }
+
+    button.active span, .button.active span{
+        color: rgb(0, 0, 0)
+    }
+
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <section>
+
+            <div id="ilustracion"></div>
+            <span class="boton">
+                <button onclick="myVivus.reset().play();">Otra vez.</button>
+            </span>
+
+            <script type="text/javascript" src="js/vivus.js"></script>
+
+           <script>
+            const myVivus = new Vivus('ilustracion', {duration: 150, type: 'sync', file: 'imgs/luna.svg'});
+            </script>
+        </section>
+    </div>
+</body>
