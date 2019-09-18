@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0%;
+  }
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: gray;
+}
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    font-size: .6rem;
+    line-height: 1.4rem
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+}
+
+section{
+    border: solid black
+}
+
+#dog{
+    width: 200px;
+    float: left;
+    shape-outside: circle(96px at 111px 113px);
+}
+
+#hola{
+    height: 300px;
+    float: left;
+    shape-outside: url(../imgs/hola.png);
+   shape-margin: .5rem;
+}
+
+#fogata{
+    width: 200px;
+    object-fit: contain;
+    float: left;
+    shape-outside: polygon(42.5% 12.4%, 15.16% 34.26%, 0% 100%, 99.5% 79.21%, 81.67% 26.07%);
+}
+
+#cafe{
+    width: 250px;
+    float: left;
+    clip-path: polygon(52.9% 15.92%, 22.87% 47.07%, -1.64% 69.13%, -0.4% 100.32%, 100.3% 100%, 102.07% 59.34%, 88.99% 53.60%, 72.56% 40.47%);
+    shape-outside: polygon(52.90% 10.48%, 22.87% 47.07%, -1.64% 69.13%, -0.4% 100.32%, 100.3% 100%, 102.07% 59.34%, 88.99% 53.6%, 72.56% 40.47%);
+}
