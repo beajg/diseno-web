@@ -8,66 +8,70 @@ html {
     box-sizing: inherit;
   }
 
-  /* PARA EL PARALLAX */
-  #container{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    border: solid 1px red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slide{
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 200px;
-    width: 200px;
-    background: red; 
-  }
-  
-  img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
+#container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: 
+  "h h h h"
+  ". . . ."
+  ". . . ."
+}
 /* PARA TODO EL HEADER */
-  header{
-    padding: 40vh;
-    margin: 0 auto;
+header{
+    background-image: url(/imgs/Portada.jpg);
     background-repeat: no-repeat;
-    background-image: url(../imgs/Portada.jpg);
+    background-size: cover;
+    height: 100vh;
+    grid-area: h;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
   }
-  img #logo{
-    margin: 0% auto;
-    padding: 0%;
-    border: 0rem;
-    width: 20vw;
-    left: 0%;
-    top: 0%;
-    align-items: baseline;
-    justify-content: flex-start;
 
-
-  }
-  ul li{
-    display: block;
+  #logo{
+    width: 30vw;
+    margin: 10px;
     float: left;
-    text-align: right;
-    align-items: flex-start;
-    background-color: gray
+
+  } 
+ .menu {
+  transition: 0.3s ease;
+  color: #ffffff;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  
+  } 
+
+  div .up{
+    background-color: rgba(68, 68, 68, 0.466);
+    z-index: 1;
   }
-  header p{
-    text-justify: auto;
+
+  .menu li{
+    width: 125px;
+    height: 50px;
+    transition-property: all;
+    background-position-x: 0.9s linear;
+    text-align: center;
+    z-index: 2;
+    color: solid rgba(141, 135, 135, 0.192);
+    
   }
+
+  a {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.45s;
+    justify-content: initial;
+  }
+
+
+
+  #quote{
+    align-items: center;
+  } 
 
 /* PARA TODO EL MAIN */
   div.gallery {
