@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nixie+One|Poiret+One|Quicksand|Raleway|Voltaire&display=swap');
+
+/* font-family: 'Nixie One', cursive;
+font-family: 'Voltaire', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container{
+    display: flex;
+  }
+
+#background{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav.menu ul{
+    list-style: none;
+    float: left;
+}

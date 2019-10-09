@@ -46,6 +46,9 @@ header{
   div .up{
     background-color: rgba(68, 68, 68, 0.466);
     z-index: 1;
+    width: 100vw;
+    height: 15vh;
+    top: 0;
   }
 
   .menu li{
