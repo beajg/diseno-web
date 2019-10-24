@@ -19,7 +19,7 @@ html {
   }
 
 .container{
-    font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One';
     width: 100vw;
     height: 100vh;
     background-image: url(../imgs/background.jpg);
@@ -57,9 +57,12 @@ li a:hover {
   transition: .3s;
 } 
 
+
 /* MAIN */
 h2#portfolio-titulo{
+  font-size: 40px;
   text-align: center;
+
 }
 
 p#portfolio-intro{
@@ -94,7 +97,9 @@ li a:hover {
   font-weight: bold;
   transition: .3s;
 } 
-/* gallery */
+
+
+/* GALLERIES */
 
 .row {
   display: -webkit-box;
