@@ -1,0 +1,349 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+/*nav*/
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+ h1{ 
+  text-align: center;
+  
+  background-size: cover;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+}
+ body
+ {
+   margin: 0;
+   padding: 0;
+   
+   /* make it look decent enough */
+   
+   color:white;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+   
+ }
+ .Cabecera{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 300px 1fr 100px;
+  grid-template-areas: 
+  ". . ."
+  ". f ."
+  ". e ."
+  ". . ."
+}
+.Galerias{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 100px;
+text-align: center;
+background: rgba(0, 0, 0, 0.733);
+margin: 0px 0px;
+
+}
+
+ a
+ {
+   text-decoration: none;
+   color:white;
+   
+   transition: color 0.3s ease;
+ }
+ a:active{
+   color: wheat;
+ }
+ a:hover
+ {
+   color:black;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: fixed;
+   top: 25px;
+   left: 15px;
+   background-attachment: fixed;
+   z-index: 8;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background:white;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 0px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ { 
+   position: absolute;
+   width: 100px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #444444ab;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ .eco{
+  transform:matrix(1,0,0,1,0,0);
+  transition:transform 0.5s ease 0s;
+  }
+  
+  .eco:hover{
+  transform:matrix(1.4,-0.54,0.54,1.4,0,0);
+  }
+  .logo{
+    transform:matrix(1,0,0,1,0,0);
+    transition:transform 0.5s ease 0s;
+    }
+    
+    .logo:hover{
+    transform:matrix(1.4,-0.54,0.54,1.4,0,0);
+    }
+  
+   .logo{
+     
+    grid-area: f;
+    background-image: url(Imagenes/SVG/Recurso\ 2.svg);
+   overflow: hidden;
+    z-index: 3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1fr;
+  
+  }
+.eco{
+  
+  text-align: center;
+  grid-area: e;
+  color: white;
+  font-size: 200px;
+  font-family:'Roboto Condensed', sans-serif;
+}
+ .background{
+  background-image: url(Imagenes/fondo.jpg);
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ #menu li
+ {font-family:'Roboto Condensed', sans-serif;
+   padding: 20px 0;
+   font-size: 30px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+/*nav*/
+.container{
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1{
+  border: 0px;
+  position: relative;
+  margin-bottom: 45px;
+
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.menu2 {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 10px   auto;
+  height: 100px;
+  list-style: none;
+}
+a {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.45s;
+}
+.menu2 li {
+  width: 200px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+
+ 
+
+  .menu2:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+  }
+
+  .menu2:hover a {
+    color: #d94f5c;
+  }
+
+  .menu2:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  
+ 
+}
+
+.item:hover{
+  flex: 7;
+}
+.item-1 { 
+  background-image: url(Imagenes/galeriamini/P1070789.jpg)
+  
+}
+.item-2 { 
+  background-image: url('Imagenes/galeriamini/P1080017.jpg');
+}
+
+.item-3 { 
+  background-image: url('Imagenes/galeriamini/Forum\ Género\ Ferrier\ 1.JPG');
+}
+
+.item-4 { 
+  background-image: url('Imagenes/galeriamini/P1070997.jpg');
+}
+
+.item-5 { 
+  background-image: url('Imagenes/galeriamini/Tribunal\ de\ Paz\ Fort\ LIberté\ 5\ \(antes\).JPG');
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  
+
+}
+img{
+  display: block;
+  width: 32px;
+}
