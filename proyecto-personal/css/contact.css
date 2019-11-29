@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nixie+One|Poiret+One|Quicksand|Raleway|Voltaire&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    font-family: 'Poiret One';
+  }
