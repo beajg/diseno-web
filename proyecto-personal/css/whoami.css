@@ -84,3 +84,8 @@ img.perfil{
 div.container{
   margin: 0 5% 20% 5%;
 }
+
+a.cv{
+  text-decoration: none;
+  font-weight: bold;
+}
