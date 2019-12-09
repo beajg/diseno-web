@@ -1,11 +1,262 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nixie+One|Poiret+One|Quicksand|Raleway|Voltaire&display=swap');
 
+/* GENERAL */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  font-family: 'Poiret One';
+}
+/* GENERAL */
+
+
+
+/* MENU */
+nav.menu {
+list-style: none;
+padding: 0;
+font-size: 30px;
+display: flex;
+justify-content: center;
+font-weight: 900;
+margin: 0 0 3%;
+
+}
+
+ul{
+  display: inline-flex;
+  list-style: none;
+}
+
+li{
+position: relative;
+margin: 3% 0 0 0;
+}
+
+li a{
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: .3s;
+}
+
+li a:hover {
+font-size: 40px;
+font-weight: bold;
+color: rgb(0, 0, 0);
+transition: .3s;
+background-color:rgba(0, 0, 0, 0.116);
+border-radius: 4px;
+} 
+/* MENU */
+
+
+/* CONTENIDO */
+h2#presentation{
+  text-align: center;
+  font-size: 30px;
+}
+
+footer{
+
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+
+img#up{
+  widows: 20%;
+  height: 20%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+
+}
+
+section.presentation{
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: 15% 0 0 0;
+
+}
+
+#down{
+  display: block;
+  margin: auto;
+  align-items: center;
+  padding: 0;
+  color: black;
+  width: 5%;
+}
+
+
+#down:hover{
+  display: block;
+  margin: auto;
+  align-items: center;
+  padding: 0;
+  color: black;
+  width: 6%;
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: .3s;
+}
+
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 20px 0;
+}
+/* CONTENIDO */
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+  nav.menu {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+  
+  }
+  
+  li{
+    position: relative;
+    margin: 3% 0 0 0;
+  }
+  
+  li a{
+      padding: 30px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition-property: all;
+      transition-timing-function: linear;
+      transition-duration: .3s;
+  }
+  
+  li a:hover {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+    background-color:rgba(0, 0, 0, 0.116);
+    border-radius: 4px;
   }
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-    margin: 0;
-    font-family: 'Poiret One';
+  h2#presentation{
+    text-align: center;
+    font-size: 20px;
   }
+
+  h2{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  img#up{
+    widows: 15%;
+    height: 15%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+  
+  }
+
+  section.presentation{
+    width: 100vw;
+    height: 30vh;
+    align-items: center;
+    margin: 10% 0 0 0;
+  
+  }
+
+}
+/* RESPONSIVE */
+
+
+
+
+/* RESPONSIVE */
+  @media (max-width: 400px){
+    nav.menu {
+      list-style: none;
+      padding: 0;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      font-weight: 900;
+    
+    }
+    
+    li{
+      position: relative;
+      margin: 3% 0 0 0;
+    }
+    
+    li a{
+        padding: 30px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        transition-property: all;
+        transition-timing-function: linear;
+        transition-duration: .3s;
+    }
+    
+    li a:hover {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      transition: .3s;
+      background-color:rgba(0, 0, 0, 0.116);
+      border-radius: 4px;
+    } 
+
+    h2#presentation{
+      text-align: center;
+      font-size: 10px;
+    }
+
+    h2{
+      text-align: center;
+      font-size: 10px;
+    }
+
+    img#up{
+      widows: 12%;
+      height: 12%;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      padding: 30px;
+    
+    }
+
+    section.presentation{
+      width: 100vw;
+      height: 40vh;
+      align-items: center;
+      margin: 50% 0 0 0;
+    
+    }
+  
+  }
+    /* RESPONSIVE */

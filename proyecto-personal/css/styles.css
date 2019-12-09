@@ -56,6 +56,11 @@ nav.menu ul{
   position: relative;
 }
 
+ul{
+  display: inline-flex;
+  list-style: none;
+}
+
 li{
   position: absolute;
   margin: 20% 0 0 0;
@@ -98,10 +103,7 @@ li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* overflow: hidden; */
   will-change: transform;
-  /* -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; */
   height: 130vh;
   position: fixed;
   width: 100%;
@@ -184,32 +186,348 @@ li a:hover {
 
 
 
-/* #app {
-	overflow: hidden;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(76,76,76,1);
-	background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(36%, rgba(43,43,43,0.74)), color-stop(71%, rgba(28,28,28,0.5)), color-stop(100%, rgba(19,19,19,0.29)));
-	background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
-	background: -o-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
-	background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
-	color: #fff;
-} */
 
-/* Extra */
-/* .controls {
-	position: absolute;
-	left: 50%;
-	bottom: 40px;
-	transform: translate(-50%, 0);
-	width: 100%;
-	margin-top: 30px;
-	text-align: center;
-	padding: 0;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px){
+
+  header{
+    align-items: center;
+  
+  }
+  
+  .logo{
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  
+  nav.menu ul{
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 900;
+    position: relative;
+  }
+  
+  ul{
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  li{
+    position: absolute;
+    margin: 20% 0 0 0;
+  }
+  
+  li a{
+      padding: 30px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition-property: all;
+      transition-timing-function: linear;
+      transition-duration: .3s;
+  }
+  
+  li a:hover {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+    background-color:rgba(0, 0, 0, 0.116);
+    border-radius: 4px;
+  } 
+  
+  /* TRANSITION */
+  .active-animation {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .fade {
+    background: orange;
+  }
+  /* TRANSITION FIN*/
+  
+  /* MAIN */
+  .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    will-change: transform;
+    height: 130vh;
+    position: fixed;
+    width: 100%;
+    -webkit-transform: translateY(20vh);
+    -ms-transform: translateY(20vh);
+    transform: translateY(20vh);
+    -webkit-transition: all 1.4s cubic-bezier(0.22,0.44,0,1);
+    transition: all 1.4s cubic-bezier(0.22,0.44,0,1);
+  }
+  
+  .content-wrapper {
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    color: #fff;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    -webkit-transform: translateY(40vh);
+    -ms-transform: translateY(40vh);
+    transform: translateY(40vh);
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+    transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+  }
+  
+  h2#portfolio-titulo{
+    font-size: 40px;
+    text-align: center;
+  
+  }
+  
+  p#portfolio-intro{
+    text-align: center;
+  }
+  
+  nav.areas ul{
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li{
+    position: relative;
+  }
+  
+  li a{
+      padding: 30px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition-property: all;
+      transition-timing-function: linear;
+      transition-duration: .3s;
+  } 
+  
+  li a:hover {
+    font-size: 40px;
+    font-weight: bold;
+    transition: .3s;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px){
+
+  header{
+    align-items: center;
+  
+  }
+  
+  .logo{
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  
+  nav.menu ul{
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 900;
+    position: relative;
+  }
+  
+  ul{
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  li{
+    position: absolute;
+    margin: 20% 0 0 0;
+  }
+  
+  li a{
+      padding: 30px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition-property: all;
+      transition-timing-function: linear;
+      transition-duration: .3s;
+  }
+  
+  li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+    background-color:rgba(0, 0, 0, 0.116);
+    border-radius: 4px;
+  } 
+  
+  /* TRANSITION */
+  .active-animation {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .fade {
+    background: orange;
+  }
+  /* TRANSITION FIN*/
+  
+  /* MAIN */
+  .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    will-change: transform;
+    height: 130vh;
+    position: fixed;
+    width: 100%;
+    -webkit-transform: translateY(20vh);
+    -ms-transform: translateY(20vh);
+    transform: translateY(20vh);
+    -webkit-transition: all 1.4s cubic-bezier(0.22,0.44,0,1);
+    transition: all 1.4s cubic-bezier(0.22,0.44,0,1);
+  }
+  
+  .content-wrapper {
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    color: #fff;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    -webkit-transform: translateY(40vh);
+    -ms-transform: translateY(40vh);
+    transform: translateY(40vh);
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+    transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+  }
+  
+  h2#portfolio-titulo{
+    font-size: 40px;
+    text-align: center;
+  
+  }
+  
+  p#portfolio-intro{
+    text-align: center;
+  }
+  
+  nav.areas ul{
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li{
+    position: relative;
+  }
+  
+  li a{
+      padding: 30px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition-property: all;
+      transition-timing-function: linear;
+      transition-duration: .3s;
+  } 
+  
+  li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+  } 
+}

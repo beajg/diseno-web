@@ -1,0 +1,180 @@
+
+.flexbin {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: -2.5px;
+}
+  
+  .flexbin:after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 280px;
+    height: 0; 
+  }
+
+
+  .flexbin > * {
+    position: relative;
+    display: block;
+    height: 280px;
+    margin: 2.5px;
+    flex-grow: 1; 
+}
+
+
+    .flexbin > * > img {
+      height: 280px;
+      object-fit: cover;
+      max-width: 100%;
+      min-width: 100%;
+      vertical-align: bottom; 
+      border-radius: 5px;}
+
+      .flexbin > * > video {
+        height: 280px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom; 
+        border-radius: 5px;}
+
+        .flexbin > * > iframe {
+          height: 280px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; 
+          border-radius: 5px;}
+
+
+  .flexbin.flexbin-margin {
+    margin: 2.5px;}
+
+
+  @media (max-width: 980px) {
+    .flexbin {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      margin: -2.5px; 
+      border-radius: 15px;}
+
+      .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 150px;
+        height: 0; }
+
+      .flexbin > * {
+        position: relative;
+        display: block;
+        height: 150px;
+        margin: 2.5px;
+        flex-grow: 1; }
+
+        .flexbin > * > img {
+          height: 150px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+
+        .flexbin > * > video {
+          height: 150px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+
+          .flexbin > * > iframe {
+            height: 150px;
+            object-fit: cover;
+            max-width: 100%;
+            min-width: 100%;
+            vertical-align: bottom; 
+            border-radius: 5px;}
+
+      .flexbin.flexbin-margin {
+        margin: 2.5px; } }
+
+
+  @media (max-width: 400px) {
+    .flexbin {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      margin: -2.5px; }
+
+      .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 100px;
+        height: 0; }
+
+      .flexbin > * {
+        position: relative;
+        display: block;
+        height: 100px;
+        margin: 2.5px;
+        flex-grow: 1; }
+
+        .flexbin > * > img {
+          height: 100px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+      
+        .flexbin > * > video {
+          height: 100px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+
+          .flexbin > * > iframe {
+            height: 100px;
+            object-fit: cover;
+            max-width: 100%;
+            min-width: 100%;
+            vertical-align: bottom; 
+            border-radius: 5px;}
+          
+      .flexbin.flexbin-margin {
+        margin: 2.5px; } }
+
+
+
+        
+        /* HOVER */
+
+
+        div.section .photo:hover  {
+          background-color: rgba(31, 31, 31, 0.226);
+          opacity:.2;
+          transition: opacity 0.3s;
+        }
+
+        div.section .texto {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-size: 2rem;
+          opacity: 0;
+        }
+
+        div.section:hover .texto {
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+          opacity: 1;
+          text-align: center;
+          position: relative;
+          vertical-align: middle;
+          top: 55%;
+          font-weight: bolder;
+        }
+       
+
+        /* HOVER */

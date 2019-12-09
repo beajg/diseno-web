@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nixie+One|Poiret+One|Quicksand|Raleway|Voltaire&display=swap');
+
+*{
+    font-family: 'Poiret One';
+    background-color: blanchedalmond;
+    
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+    text-align: left;
+}
+
+.container{
+    display: flex;
+}
+
+#img400{
+    width: 500px;
+    display: flex;
+    float: right;
+    margin: 20px 200px 0 0;
+}
+
+.texto400{
+    width: 50%;
+    margin: 0 0 0 30px;
+}
+
+.texto401{
+    width: 50%;
+    margin: 0 0 0 30px;
+}
+
+#img401{
+    width: 500px;
+    display: flex;
+    float: right;
+    margin: 20px 200px 0 0;
+}
+
+.texto403{
+    width: 50%;
+    margin: 0 0 0 30px;
+}
+
+#img403{
+    width: 500px;
+    display: flex;
+    float: right;
+    margin: 20px 200px 0 0;
+}
+
+.texto404{
+    width: 50%;
+    margin: 0 0 0 30px;
+}
+
+#img404{
+    width: 500px;
+    display: flex;
+    float: right;
+    margin: 20px 200px 0 0;
+}
+
+.texto500{
+    width: 50%;
+    margin: 0 0 0 30px;
+}
+
+#img500{
+    width: 500px;
+    display: flex;
+    float: right;
+    margin: 20px 200px 0 0;
+}
+
